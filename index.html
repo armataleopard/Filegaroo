@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filegaroo ($ROO) — Zip Into the MemeChain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neon-pink': '#ff00ff',
+                        'neon-blue': '#00ffff',
+                        'dark-purple': '#2d0a31',
+                        'light-purple': '#9d4edd',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-dark-purple to-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-bold text-neon-pink">$ROO</div>
+            <div class="flex space-x-4">
+                <a href="https://t.me/filegaroo" target="_blank" class="bg-neon-blue hover:bg-blue-600 text-black font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Telegram
+                </a>
+                <a href="https://pump.fun/token/filegaroo" target="_blank" class="bg-neon-pink hover:bg-pink-600 text-black font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Pump.Fun
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="h-screen flex flex-col justify-center items-center relative overflow-hidden">
+        <img src="banner.png" alt="Filegaroo Banner" class="absolute w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate__animated animate__backInDown text-neon-pink">
+                Filegaroo
+            </h1>
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 animate__animated animate__backInUp text-neon-blue">
+                Zip Into the MemeChain
+            </h2>
+            <div class="text-xl md:text-2xl font-bold animate__animated animate__flash animate__infinite animate__slow">
+                LAUNCHING ON PUMP.FUN — 29 MAY
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Who is Filegaroo? -->
+    <section id="about" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-neon-pink">WHO IS FILEGAROO?</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="3.png" alt="Filegaroo Character" class="max-w-full rounded-lg shadow-2xl" id="filegaroo-img">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <p class="text-xl leading-relaxed">
+                        Filegaroo used to be a regular roo until he found a corrupted .zip file in the cloud. 
+                        Now he decrypts blockchains with his tail, surfs metadata waves, and guards your 
+                        memecoins with pixel-perfect precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Why $ROO? -->
+    <section id="why-roo" class="py-20 px-4 bg-gradient-to-r from-dark-purple to-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-neon-blue">WHY $ROO?</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="1.png" alt="Filegaroo on Skateboard" class="max-w-full rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="space-y-8">
+                        <div class="bg-neon-pink bg-opacity-20 p-6 rounded-xl border border-neon-pink transform transition-all duration-500 hover:scale-105 reason-bubble">
+                            <p class="text-2xl font-bold">Not your average kangaroo</p>
+                        </div>
+                        <div class="bg-neon-blue bg-opacity-20 p-6 rounded-xl border border-neon-blue transform transition-all duration-500 hover:scale-105 reason-bubble">
+                            <p class="text-2xl font-bold">Downloads trust, uploads profits</p>
+                        </div>
+                        <div class="bg-light-purple bg-opacity-20 p-6 rounded-xl border border-light-purple transform transition-all duration-500 hover:scale-105 reason-bubble">
+                            <p class="text-2xl font-bold">Born from a ZIP, destined for a MOON</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Community Lore -->
+    <section id="community" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-neon-pink">COMMUNITY LORE</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="4.png" alt="Flying Filegaroo" class="max-w-full rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div id="lore-carousel" class="space-y-8">
+                        <div class="bg-neon-pink bg-opacity-20 p-6 rounded-xl border border-neon-pink lore-item">
+                            <p class="text-xl">
+                                "One user said his files downloaded faster after buying $ROO. Science disagrees. Filegaroo doesn't."
+                            </p>
+                        </div>
+                        <div class="bg-neon-blue bg-opacity-20 p-6 rounded-xl border border-neon-blue lore-item hidden">
+                            <p class="text-xl">
+                                "Every time someone buys $ROO, a pixel blinks in heaven."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center mt-6 space-x-4">
+                        <button id="prev-lore" class="bg-neon-pink px-4 py-2 rounded-full">Previous</button>
+                        <button id="next-lore" class="bg-neon-blue px-4 py-2 rounded-full">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Tokenomics -->
+    <section id="tokenomics" class="py-20 px-4 bg-gradient-to-r from-dark-purple to-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-neon-blue">TOKENOMICS</h2>
+            <div class="flex justify-center mb-12">
+                <img src="logo.jpg" alt="Filegaroo Logo" class="w-48 h-48 object-contain">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-neon-pink bg-opacity-20 p-8 rounded-xl border border-neon-pink transform transition-all duration-500 hover:scale-105">
+                    <h3 class="text-3xl font-bold mb-2">1B</h3>
+                    <p class="text-xl">Supply</p>
+                </div>
+                <div class="bg-neon-blue bg-opacity-20 p-8 rounded-xl border border-neon-blue transform transition-all duration-500 hover:scale-105">
+                    <h3 class="text-3xl font-bold mb-2">0%</h3>
+                    <p class="text-xl">Tax</p>
+                </div>
+                <div class="bg-light-purple bg-opacity-20 p-8 rounded-xl border border-light-purple transform transition-all duration-500 hover:scale-105">
+                    <h3 class="text-3xl font-bold mb-2">100%</h3>
+                    <p class="text-xl">On Launch</p>
+                </div>
+                <div class="bg-neon-pink bg-opacity-20 p-8 rounded-xl border border-neon-pink transform transition-all duration-500 hover:scale-105">
+                    <h3 class="text-3xl font-bold mb-2">No Presale</h3>
+                    <p class="text-xl">No VCs, Just Vibes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Interactive Area -->
+    <section id="interactive" class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-16 text-neon-pink">DROP YOUR FILE</h2>
+            <div class="max-w-md mx-auto bg-dark-purple bg-opacity-50 p-12 rounded-xl border-2 border-dashed border-neon-blue cursor-pointer" id="drop-zone">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">📁</div>
+                    <p class="text-xl mb-2">Drag & Drop a file here</p>
+                    <p class="text-sm text-gray-400">Let Filegaroo process it</p>
+                </div>
+            </div>
+            <div id="success-message" class="mt-8 text-2xl font-bold text-neon-pink hidden animate__animated animate__bounceIn">
+                You Found Utility!
+            </div>
+        </div>
+    </section>
+
+    <!-- Flying Files Animation Container -->
+    <div id="flying-files-container" class="fixed inset-0 pointer-events-none z-40"></div>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 bg-black">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="https://t.me/filegaroo" target="_blank" class="bg-neon-blue hover:bg-blue-600 text-black font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Telegram
+                </a>
+                <a href="https://pump.fun/token/filegaroo" target="_blank" class="bg-neon-pink hover:bg-pink-600 text-black font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Pump.Fun
+                </a>
+            </div>
+            <p class="text-gray-400">Made with ❤️ by the Filegaroo Syndicate</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

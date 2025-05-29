@@ -1,0 +1,120 @@
+/* Custom Cursor */
+body {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="%23ff00ff" stroke="%23000000" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V9l-7-7z"/><path d="M13 3v6h6"/></svg>'), auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Neon Text Effect */
+.text-neon-pink {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff;
+}
+
+.text-neon-blue {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+}
+
+/* Glowing Eyes Animation */
+@keyframes glowingEyes {
+    0% { filter: drop-shadow(0 0 2px #ff00ff); }
+    50% { filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 15px #00ffff); }
+    100% { filter: drop-shadow(0 0 2px #ff00ff); }
+}
+
+.eyes-glow {
+    animation: glowingEyes 2s infinite;
+}
+
+/* Flying Files Animation */
+.flying-file {
+    position: absolute;
+    font-size: 24px;
+    animation: fly-across 15s linear forwards;
+    opacity: 0.7;
+    z-index: 40;
+    pointer-events: none;
+}
+
+@keyframes fly-across {
+    0% {
+        transform: translateX(-100px) translateY(var(--y-pos)) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px)) translateY(var(--y-pos)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Reason Bubbles Animation */
+.reason-bubble {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slide-in 0.5s forwards;
+    animation-play-state: paused;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Interactive Drop Zone */
+#drop-zone {
+    transition: all 0.3s ease;
+}
+
+#drop-zone.drag-over {
+    background-color: rgba(157, 78, 221, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Scroll-triggered animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Zip animation */
+@keyframes zip-in {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.zip-in {
+    animation: zip-in 1s ease forwards;
+} 

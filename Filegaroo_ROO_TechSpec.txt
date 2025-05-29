@@ -1,0 +1,78 @@
+PROJECT: Filegaroo ($ROO) — High-Quality Meme Coin Landing Page
+
+OVERVIEW:
+Build a fun, premium-looking meme coin landing page for "Filegaroo" ($ROO), themed around a tech-savvy, futuristic kangaroo who jumps across file networks and internet clouds. The design must reflect the vibrant, playful, yet tech-heavy style of the image pack provided.
+
+KEY VISUAL GUIDELINES:
+- Style: Neon, cyber-aesthetic, slightly retro-futuristic.
+- Color palette: Electric pink, neon blue, gradient purples, and clean white or dark backgrounds.
+- Central visuals: Kangaroo characters, digital files, skies and clouds, motion and flow.
+- Include full-screen sections with animated elements inspired by images.
+- Use ALL uploaded visuals; ensure none are cropped or masked oddly.
+
+MAIN TEXT PLACEMENT:
+- Centered main text:
+  “Filegaroo”
+  “$ROO”
+
+NAVIGATION:
+- Sticky top navbar or corner-floating buttons.
+- Buttons:
+  [Telegram] (link externally)
+  [Pump.Fun] (link to token page)
+
+HOMEPAGE HEADER SECTION:
+- Fullscreen banner using `banner.png`
+- Bright animated entrance text: “Filegaroo — Zip Into the MemeChain”
+- Underneath: “LAUNCHING ON PUMP.FUN — 29 MAY” with electric animation.
+
+SECTION 1 — WHO IS FILEGAROO?
+- Left: character image of kangaroo in front of monitors (image 3 or 4)
+- Right: Description (~100 words):
+  “Filegaroo used to be a regular roo until he found a corrupted .zip file in the cloud. Now he decrypts blockchains with his tail, surfs metadata waves, and guards your memecoins with pixel-perfect precision.”
+- Animate the eyes of Filegaroo glowing when scrolling.
+
+SECTION 2 — WHY $ROO?
+- Display the kangaroo on a skateboard (image 1)
+- List 3–4 meme-heavy points in large text bubbles:
+  • "Not your average kangaroo"
+  • "Downloads trust, uploads profits"
+  • "Born from a ZIP, destined for a MOON"
+- Slide-in animation from right.
+
+SECTION 3 — COMMUNITY LORE
+- Use image 5 (kangaroo flying with glasses)
+- Add 2 rotating joke-stories from fans (~100 words each), e.g.:
+  “One user said his files downloaded faster after buying $ROO. Science disagrees. Filegaroo doesn’t.”
+  “Every time someone buys $ROO, a pixel blinks in heaven.”
+
+SECTION 4 — TOKENOMICS
+- Visual: Use pixel-art logo.
+- Block layout:
+  • 1B Supply
+  • 0% Tax
+  • 100% on launch
+  • No presale, no VCs, just vibes
+
+SECTION 5 — INTERACTIVE AREA
+Choose 1 or more:
+- Drag-and-drop zip file into Filegaroo pouch animation.
+- A ZIP opens showing “You Found Utility!” popup.
+- On hover over Filegaroo, he winks or types.
+
+ANIMATIONS:
+- Each section fades or zips into view.
+- File icons fly across screen at random intervals.
+- Cursor turns into a USB stick or file icon.
+
+FOOTER:
+- Minimal footer with Telegram button, Pump.fun button
+- “Made with ❤️ by the Filegaroo Syndicate”
+
+DEVICE:
+- Fully responsive
+- Mobile-friendly animations
+
+DELIVERABLES:
+- HTML5 / TailwindCSS / React or plain
+- Animations via CSS or Framer Motion (if React)
